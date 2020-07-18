@@ -63,6 +63,8 @@
         } else {
             $this.text('Ok');
         }
+
+        console.log(occurences);
     }
 
 
