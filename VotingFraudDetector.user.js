@@ -34,6 +34,13 @@
                 console.log('Backoff: ' + response.backoff);
                 await sleep(response.backoff);
             }
+
+            // Don't check more than 6 months
+            let lastEl = repHistory[repHistory.length - 1];
+            if(new Date(lastEl.creation_date * 1000) < subMonths(new Date(), 6)) {
+                break;
+            }
+
             page++;
         }
 
@@ -83,6 +90,12 @@
     function sleep(ms) {
         return new Promise(resolve => setTimeout(resolve, ms));
     }
+
+    function subMonths(date, months) {
+        date.setMonth(date.getMonth() - months);
+        return date;
+    }
+
 
 
     async function initButton(){
