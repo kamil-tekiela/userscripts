@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Voting fraud detector
-// @namespace    http://tampermonkey.net/
+// @homepage     https://github.com/kamil-tekiela/userscripts
 // @version      1.0
 // @description  Adds a button unders user card to check for serial voting in the user's reputation history
 // @author       Dharman
