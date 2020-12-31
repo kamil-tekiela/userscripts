@@ -1,10 +1,11 @@
 // ==UserScript==
 // @name         Post checker from https://bot.dharman.net/
 // @homepage     https://github.com/kamil-tekiela/userscripts
-// @version      1.0
+// @version      1.1
 // @description  Checks if the post is deleted
 // @author       Dharman
-// @match        *://bot.dharman.net/*
+// @match        *://bot.dharman.net/reports*
+// @match        *://bot.dharman.net/search*
 // @grant        GM_xmlhttpRequest
 // ==/UserScript==
 
