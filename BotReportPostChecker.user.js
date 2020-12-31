@@ -36,7 +36,7 @@
         posts.map(function() {
             let item = parseInt(this.innerHTML);
             if(!result.includes(item) && !idMap[item]){
-                $(this).closest('.container').find('.body').css('background-color', 'rgb(185 57 57 / 12%)');
+                $(this).closest('.container').css('background-color', 'rgb(185 57 57 / 12%)');
                 idMap[item] = false;
             } else {
                 idMap[item] = true;
