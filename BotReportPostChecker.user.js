@@ -14,8 +14,8 @@
 
     const API_KEY = 'gS)WzUg0j7Q5ZVEBB5Onkw((';
 
-    checkPosts();
     removeBanner();
+    checkPosts();
 
     async function checkPosts() {
         let posts = $('.postID');
