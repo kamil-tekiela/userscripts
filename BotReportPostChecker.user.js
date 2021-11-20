@@ -70,7 +70,7 @@
     function removeBanner() {
         const styles = `
 <style>
-.alert-info {
+.userscriptAlert {
     display: none;
 }
 </style>
