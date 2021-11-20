@@ -15,6 +15,7 @@
     const API_KEY = 'gS)WzUg0j7Q5ZVEBB5Onkw((';
 
     checkPosts();
+    removeBanner();
 
     async function checkPosts() {
         let posts = $('.postID');
@@ -66,4 +67,14 @@
         return new Promise(resolve => setTimeout(resolve, ms));
     }
 
+    function removeBanner() {
+        const styles = `
+<style>
+.alert-info {
+    display: none;
+}
+</style>
+`;
+        $('body').append(styles);
+    }
 })(jQuery);
